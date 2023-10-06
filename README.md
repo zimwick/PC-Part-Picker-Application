@@ -3,7 +3,10 @@
 
 C.	Customize the HTML user interface for your customer’s application. The user interface should include the shop name, the product names, and the names of the parts.
 
-> Note: Do not remove any elements that were included in the screen. You may add any additional elements you would like or any images, colors, and styles, although it is not required.
+> 1. mainscreen.html, line 14: changed title to "American PC Distributors"
+> 2. mainscreen.html, line 19: changed header to "American PC Distributors"
+> 3. demo.css, line 1-3: added code to change background color
+> 4. mainscreen.html, line 13: added reference to demo.css stylesheet
 
 D.	Add an “About” page to the application to describe your chosen customer’s company to web viewers and include navigation to and from the “About” page and the main screen.
 
