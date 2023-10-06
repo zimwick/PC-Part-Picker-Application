@@ -9,6 +9,9 @@ C.	Customize the HTML user interface for your customer’s application. The user
 > 4. mainscreen.html, line 13: added reference to demo.css stylesheet
 
 D.	Add an “About” page to the application to describe your chosen customer’s company to web viewers and include navigation to and from the “About” page and the main screen.
+> 1. mainscreen.html, line 22 added button that links to about page
+> 2. about.html, Created about.html page
+> 3. AboutController.java, Created AboutController.java file
 
 E.	Add a sample inventory appropriate for your chosen store to the application. You should have five parts and five products in your sample inventory and should not overwrite existing data in the database.
 
