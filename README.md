@@ -9,6 +9,7 @@ C.	Customize the HTML user interface for your customer’s application. The user
 > 4. mainscreen.html, line 13: added reference to demo.css stylesheet
 
 D.	Add an “About” page to the application to describe your chosen customer’s company to web viewers and include navigation to and from the “About” page and the main screen.
+
 > 1. mainscreen.html, line 22 added button that links to about page
 > 2. about.html, Created about.html page
 > 3. AboutController.java, Created AboutController.java file
@@ -16,6 +17,8 @@ D.	Add an “About” page to the application to describe your chosen customer�
 E.	Add a sample inventory appropriate for your chosen store to the application. You should have five parts and five products in your sample inventory and should not overwrite existing data in the database.
 
 > Note: Make sure the sample inventory is added only when both the part and product lists are empty. When adding the sample inventory appropriate for the store, the inventory is stored in a set so duplicate items cannot be added to your products. When duplicate items are added, make a “multi-pack” part.
+> 1. BootStrapData.java, lines 42- 83, I added logic that checks if the part list is empty and if so it adds 5 parts
+> 2. BootStrapData.java, lines 106 - 122, Added logic that checks if the product list is empty and if so it add 5 products
 
 F.	Add a “Buy Now” button to your product list. Your “Buy Now” button must meet each of the following parameters:
 
