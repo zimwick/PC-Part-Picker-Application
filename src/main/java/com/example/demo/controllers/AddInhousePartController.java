@@ -41,8 +41,10 @@ public class AddInhousePartController{
         theModel.addAttribute("inhousepart",part);
         if(theBindingResult.hasErrors()){
             return "InhousePartForm";
-        } else if (part.isValid() == false) {
-            return "invalidinventory";
+        } else if (part.getInv() > part.getMaxInv()) {
+            return "inventoryhigh";
+        } else if (part.getInv() < part.getMinInv()) {
+            return "inventorylow";
         } else{
         InhousePartService repo=context.getBean(InhousePartServiceImpl.class);
         InhousePart ip=repo.findById((int)part.getId());
