@@ -11,8 +11,8 @@ C.	Customize the HTML user interface for your customer’s application. The user
 D.	Add an “About” page to the application to describe your chosen customer’s company to web viewers and include navigation to and from the “About” page and the main screen.
 
 > 1. mainscreen.html, line 22 added button that links to about page
-> 2. about.html, Created about.html page
-> 3. AboutController.java, Created AboutController.java file
+> 2. about.html, Created about.html page, lines 1 - 36, implemented code to display the about page
+> 3. AboutController.java, Created AboutController.java file, lines 8 - 15, implemented code to direct to the about.html page
 
 E.	Add a sample inventory appropriate for your chosen store to the application. You should have five parts and five products in your sample inventory and should not overwrite existing data in the database.
 
@@ -25,6 +25,11 @@ F.	Add a “Buy Now” button to your product list. Your “Buy Now” button mu
 - The “Buy Now” button must be next to the buttons that update and delete products.
 - The button should decrement the inventory of that product by one. It should not affect the inventory of any of the associated parts.
 - Display a message that indicates the success or failure of a purchase.
+
+> 1. mainscreen.html, line 86, added buy now button
+> 2. BuyProductController.java, Created BuyProductController.java file, lines 18-34, Implemented logic to decrease product inventory by 1 on purchase
+> 3. ConfirmPurchase.html, created ConfirmPurchase.html file, lines 1-17, implemented code to display the confirm page
+> 4. ProductDeleteError.html, Created ProductDeleteError.html file, lines 1-17, implemented code to display the error message when deleted items that have 0 inventory
 
 G.	Modify the parts to track maximum and minimum inventory by doing the following:
 

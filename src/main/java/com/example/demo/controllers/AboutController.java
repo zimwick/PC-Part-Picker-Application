@@ -7,8 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class AboutController {
-    @Autowired
-    private ApplicationContext context;
 
     @GetMapping("/showAbout")
     public String showAbout() {
