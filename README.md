@@ -39,6 +39,19 @@ G.	Modify the parts to track maximum and minimum inventory by doing the followin
 - Rename the file the persistent storage is saved to.
 - Modify the code to enforce that the inventory is between or at the minimum and maximum value.
 
+> 1. Part.java, line 32-35, added fields for min and max inventory values
+> 2. Part.java, line 58-65, added constructor with new min and max fields
+> 3. Part.java, line 67-78, created getter and setter methods for max and min inventory
+> 4. InhousePartForm.html, line 23-26, added input fields for max and min inventory
+> 5. OutsourcedPartForm.html, line 24-27, added input fields for max and min inventory
+> 6. mainscreen.html, line 41-42, added min and max inventory fields to show on table
+> 7. mainscreen.html, line 51-52, added code for min and max values to show in cells
+> 8. Part.java, line 119-126, implemented a method to determine if the part inventory is within the max and min range
+> 9. AddInhousePartController.java, line 42-45, added logic to check if part is invalid due to incorrect inventory range
+> 10. invalidinventory.html, created invalidinventory.html page, lines 1-17 created code for error page
+> 11. AddOutsourcedPartController.java, line 45-46, added logic to check if part is invalid due to incorrect inventory range
+> 12. application.properties, line 6, updated code to point to new database name AmericanPCdata
+
 H.	Add validation for between or at the maximum and minimum fields. The validation must include the following:
 
 - Display error messages for low inventory when adding and updating parts if the inventory is less than the minimum number of parts.
