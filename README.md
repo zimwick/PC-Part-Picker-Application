@@ -61,7 +61,8 @@ H.	Add validation for between or at the maximum and minimum fields. The validati
 > 2. inventorylow.html, created inventorylow.html, line 1-17, created code for the error page when inventory is lower than lowest allowed inventory value
 > 3. AddInhousePartController.java, line 44-47, changed logic to direct to specific error pages depending on whether inventory is too high or too low
 > 4. AddOutsourcedPartController.java, line 45-48, changed logic to direct to specific error pages depending on whether inventory is too high or too low
-> 5. 
+> 5. ValidEnufParts.java, line 20, changed wording to match the error that the inventory cannot go lower than specified
+> 6. EnufPartsValidator.java, line 36-39, changed code logic to detect if part inventory value is less than the minimum inventory value
 
 I.	Add at least two unit tests for the maximum and minimum fields to the PartTest class in the test package.
 
