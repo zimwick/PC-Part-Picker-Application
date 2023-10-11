@@ -27,6 +27,24 @@ class PartTest {
         partIn=new InhousePart();
         partOut=new OutsourcedPart();
     }
+
+    @Test
+    void setMinInv(){
+        int minInv = 1;
+        partIn.setMinInv(minInv);
+        assertEquals(partIn.getMinInv(), minInv);
+        partOut.setMinInv(minInv);
+        assertEquals(partOut.getMinInv(), minInv);
+    }
+    @Test
+    void setMaxInv(){
+        int maxInv = 200;
+        partIn.setMaxInv(maxInv);
+        assertEquals(partIn.getMaxInv(), maxInv);
+        partOut.setMaxInv(maxInv);
+        assertEquals(partOut.getMaxInv(), maxInv);
+    }
+
     @Test
     void getId() {
         Long idValue=4L;
